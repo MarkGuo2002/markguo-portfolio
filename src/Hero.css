@@ -1,0 +1,39 @@
+/* Hero.css */
+.hero {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #hero-background-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container */
+    filter: blur(2px) brightness(0.7);
+  }
+  
+  .hero-overlay {
+    padding:3em;
+    z-index: 1;
+    position: absolute;
+    top: 20%; /* Crop 20% from the top */
+    bottom: 20%; /* Crop 20% from the bottom */
+    left: 0;
+    right: 0;
+    height: 60%; /* Adjust the height of the overlay as needed */
+
+  }
+  
+  .hero-content {
+    text-align: center;
+    color: #fff; /* Set the text color to white or your preferred color */
+  }
+  
+  .title{
+    color:white;
+    margin: 10px 0;
+  }
+  .subtitle {
+    color:rgb(211, 211, 211);
+    margin: 10px 0;
+  }
+  

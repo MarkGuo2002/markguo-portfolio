@@ -1,0 +1,36 @@
+/* 
+:root{
+    --bs-font-roboto-default: Roboto, "Segoe UI", "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+    --blush: #e0506f;
+    --pink-light: #faf1f3;
+    --white: #ffffff;
+    --beige: #faf8f2;
+    --grey: #d8d8d8;
+    --black: #000000;
+
+} */
+.navbar{
+/*add shadow to the bottom*/
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    /* background-color: var(--pink-light); */
+    background-color: var(--white);
+}
+.navbar .navbar-item{
+    padding: 1.25rem 5rem 1.25rem 5rem;;
+}
+
+/*make navba-item turn on red with a 1 second transition when hover on it */
+.navbar .navbar-item:hover{
+    background-color: rgb(243, 235, 235);
+    transition: background-color 0.5s;
+}
+
+
+.navbar .navbar-item a{
+    font-size: 123px;
+    color: red !important; 
+}
+
