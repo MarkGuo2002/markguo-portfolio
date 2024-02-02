@@ -1,4 +1,3 @@
-import github from "./assets/github.png";
 import Tag from "./Tag";
 function ProjectCard(props) {
     for (let i = 0; i < props.tags.length; i++) {

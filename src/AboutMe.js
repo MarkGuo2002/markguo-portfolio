@@ -10,7 +10,7 @@ function AboutMe() {
         <div className='title'>About me!</div>
         <div className="aboutme-container columns">
             <div className="column is-one-quarter profile-container ">
-              <img className="profile-image" src={profilePhoto} />
+              <img className="profile-image" src={profilePhoto} alt='hello world' />
               <div>
                 <p>
                   <em>fourth-year student in Computer Science Student 

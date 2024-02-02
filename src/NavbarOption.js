@@ -5,7 +5,7 @@ const scrollToSection = (sectionId, options) => {
 
 function NavbarOption(props) {
   return (
-    <a
+    <div
             className="navbar-item custum-navbar-item is-size-6"
             onClick={() =>
               scrollToSection(props.text, {
@@ -15,7 +15,7 @@ function NavbarOption(props) {
             }
     >
     {props.text}
-    </a>
+    </div>
   );
 }
 
