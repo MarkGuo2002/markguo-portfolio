@@ -9,7 +9,7 @@ function ProjectCard(props) {
         <div class="card" >
         <div class="card-image">
           <figure class="image is-4by3">
-            <img src={props.image} alt="Placeholder image"></img>
+            <img src={props.image} alt="hello"></img>
           </figure>
         </div>
         <div class="card-content">
