@@ -7,7 +7,7 @@ function Hero() {
     <div className="hero">
       <div className="hero-overlay center">
         <div className="hero-content">
-          <h1 className="title center">Welcome to Mark Guo's personal website</h1>
+          <h1 className="title-hero center">Welcome to Mark Guo's personal website</h1>
           <h2 className="subtitle center">Cloud Technology, Software and Web Development</h2>
         </div>
       </div>

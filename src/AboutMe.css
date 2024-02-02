@@ -1,0 +1,38 @@
+.profile-image{
+    border-radius: 50%;
+    width: 20vh;
+    /* add shadow */
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
+}
+.profile-container{
+    padding:20px;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title{
+    color: #ca657d !important;
+    margin-bottom: 20px !important;
+}
+
+.mini-section-title{
+    color: #ca657d;
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+.mini-section p:not(:last-child) {
+    margin-bottom: 2em;
+}
+.column-padding{
+    padding-left: 0px;
+    /* Media query for screens wider than a certain breakpoint */
+    @media (min-width: 600px) {
+        padding-left: min(10%, 300px); /* Adjust the percentage or pixel value as needed */
+    }
+}

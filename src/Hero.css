@@ -28,9 +28,14 @@
     color: #fff; /* Set the text color to white or your preferred color */
   }
   
-  .title{
+  .title-hero{
     color:white;
     margin: 10px 0;
+    /*bigger and stronger*/
+    font-size: 3em;
+    font-weight: 350;
+
+
   }
   .subtitle {
     color:rgb(211, 211, 211);
