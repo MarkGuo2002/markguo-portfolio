@@ -6,7 +6,7 @@ import Tag from './Tag';
 function AboutMe() {
   return (
     <div>
-    <section className="section" id="About Me" data-aos="fade-right">
+    <section className="section" id="About Me" data-aos="fade-right" data-aos-once="true">
         <div className='title'>About me!</div>
         <div className="aboutme-container columns">
             <div className="column is-one-quarter profile-container" data-aos="fade-right" data-aos-once="true" data-aos-delay="150">
