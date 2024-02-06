@@ -9,17 +9,17 @@ function AboutMe() {
     <section className="section" id="About Me" data-aos="fade-right">
         <div className='title'>About me!</div>
         <div className="aboutme-container columns">
-            <div className="column is-one-quarter profile-container ">
+            <div className="column is-one-quarter profile-container" data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
               <img className="profile-image" src={profilePhoto} alt='hello world' />
               <div>
-                <p>
+                <p> 
                   <em>fourth-year student in Computer Science Student 
                   at UC3M Madrid<br></br>
                   Currently working as Operations/Systems Engineer at <strong>Satec_</strong></em>
                 </p>
               </div>
             </div>
-            <div className="column column-padding">
+            <div className="column column-padding" data-aos="fade-right" data-aos-once="true" data-aos-delay="200">
               <div className='mini-section'>
                 <div className='mini-section-title'>Education</div>
                 <p><strong>2011 - 2020: </strong>Nuestra Señora del Carmen Indautxu de Bilbao</p>
