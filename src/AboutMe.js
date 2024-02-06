@@ -9,7 +9,7 @@ function AboutMe() {
     <section className="section" id="About Me" data-aos="fade-right">
         <div className='title'>About me!</div>
         <div className="aboutme-container columns">
-            <div className="column is-one-quarter profile-container" data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
+            <div className="column is-one-quarter profile-container" data-aos="fade-right" data-aos-once="true" data-aos-delay="150">
               <img className="profile-image" src={profilePhoto} alt='hello world' />
               <div>
                 <p> 
@@ -19,7 +19,7 @@ function AboutMe() {
                 </p>
               </div>
             </div>
-            <div className="column column-padding" data-aos="fade-right" data-aos-once="true" data-aos-delay="200">
+            <div className="column column-padding" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
               <div className='mini-section'>
                 <div className='mini-section-title'>Education</div>
                 <p><strong>2011 - 2020: </strong>Nuestra Señora del Carmen Indautxu de Bilbao</p>
