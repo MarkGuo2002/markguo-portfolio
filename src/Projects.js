@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 import MyTvImg from "./assets/mytv.png";
 import MessengerImg from "./assets/messenger.png";
 import GameEngineDemo from "./assets/game-engine-demo.gif";
-import GameEngineMap from "./assets/game-engine-map.png";
+//import GameEngineMap from "./assets/game-engine-map.png";
 let MyTv=
     {
         image: MyTvImg,
