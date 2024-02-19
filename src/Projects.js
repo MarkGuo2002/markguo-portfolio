@@ -1,6 +1,8 @@
 import ProjectCard from "./ProjectCard";
 import MyTvImg from "./assets/mytv.png";
 import MessengerImg from "./assets/messenger.png";
+import GameEngineDemo from "./assets/game-engine-demo.gif";
+import GameEngineMap from "./assets/game-engine-map.png";
 let MyTv=
     {
         image: MyTvImg,
@@ -16,6 +18,15 @@ let messenger=
     content: "Messenger's backend is C-based with a Singly Linked List, providing a proxy to the frontend which is Python-based with Tkinter, communicating via sockets.",
     tags: ["C, Python, Tkinter, Sockets, Singly linked list"],
     githubLink:"https://github.com/MarkGuo2002/DistribuidosTF-Messenger"
+}
+
+let gameEngine=
+{
+    image: GameEngineDemo,
+    title: "C++ Simple FPS Game Engine",
+    content: "A simple game engine developed using ASCII Characters, applying Game Dev techniques such as Ray Casting. The engine is capable of rendering a user predifined map.",
+    tags: ["C++", "Game Engine", "Linear Algebra"],
+    githubLink:""
 }
 
 
@@ -43,6 +54,14 @@ function Projects() {
                     content={messenger.content}
                     tags={messenger.tags}
                     githubLink={messenger.githubLink}/>
+                </div>
+                <div className="column" data-aos="fade-right" data-aos-once="true" data-aos-delay="450">
+                <ProjectCard
+                    image={gameEngine.image}
+                    title={gameEngine.title}
+                    content={gameEngine.content}
+                    tags={gameEngine.tags}
+                    githubLink={gameEngine.githubLink}/>
                 </div>
                 <div className="column"></div>
                 <div className="column"></div>
