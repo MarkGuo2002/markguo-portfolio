@@ -13,9 +13,9 @@ function AboutMe() {
               <img className="profile-image" src={profilePhoto} alt='hello world' />
               <div>
                 <p> 
-                  <em>Fourth-year student in Computer Science Student 
+                  <em>Fourth-year student in Computer Science
                   at UC3M Madrid<br></br>
-                  Currently working as Operations/Systems Engineer at <strong>Satec_</strong></em>
+                  Currently working as Cloud & Cybersecurity Assistant at <strong>Satec_</strong></em>
                 </p>
               </div>
             </div>
@@ -27,7 +27,15 @@ function AboutMe() {
               </div>
               <div className='mini-section'>
                 <div className='mini-section-title'>Work Experience</div>
-                <p><strong>2023 oct - now:</strong> Sistemas Avanzados de Tecnología S.A. (Satec_)</p>
+                <p><strong>2023 oct - now:</strong> Sistemas Avanzados de Tecnología S.A. (Satec_)</p>  
+              </div>
+              <div className='mini-section'>
+                <div className='mini-section-title'>Main interests</div>
+                <Tag text="Software Developing" />
+                <Tag text="Web Developing" />
+                <Tag text="Cloud Technology" />
+                <Tag text="Software Architecture" />
+                <Tag text="Agile Methodologies" />
                 
               </div>
               <div className='mini-section'>
