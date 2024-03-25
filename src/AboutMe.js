@@ -13,7 +13,7 @@ function AboutMe() {
               <img className="profile-image" src={profilePhoto} alt='hello world' />
               <div>
                 <p> 
-                  <em>fourth-year student in Computer Science Student 
+                  <em>Fourth-year student in Computer Science Student 
                   at UC3M Madrid<br></br>
                   Currently working as Operations/Systems Engineer at <strong>Satec_</strong></em>
                 </p>

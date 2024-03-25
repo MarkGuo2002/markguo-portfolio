@@ -44,7 +44,7 @@ function App() {
         <div className="content has-text-centered">
           <p>
           <strong>Contacts</strong><br></br><br></br>
-            markguo2002@gmail.com
+            markguo2002@gmail.coms
           </p>
         </div>
       </footer>
