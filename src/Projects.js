@@ -8,7 +8,7 @@ let MyTv=
         image: MyTvImg,
         title: "MyTv",
         content: "Web application that allows users to control the application from their phone, using sockets to communicate with the server. Developed in Node.js, using Express.js, and Socket.io. Frontend developed in HTML/CSS and JavaScript.",
-        tags: ["Node.js", "JavaScript", "HTML/CSS, Express.js , Socket.io"],
+        tags: ["Node.js", "JavaScript", "HTML/CSS", "Express.js", "Socket.io"],
         githubLink:"https://github.com/MarkGuo2002/SIU_ProyectoFinal-MyTv"
     }
 let messenger=
@@ -16,7 +16,7 @@ let messenger=
     image: MessengerImg,
     title: "C Messenger",
     content: "Messenger's backend is C-based with a Singly Linked List, providing a proxy to the frontend which is Python-based with Tkinter, communicating via sockets.",
-    tags: ["C, Python, Tkinter, Sockets, Singly linked list"],
+    tags: ["C", "Python", "Tkinter", "Sockets", "Singly linked list"],
     githubLink:"https://github.com/MarkGuo2002/DistribuidosTF-Messenger"
 }
 
@@ -63,8 +63,7 @@ function Projects() {
                     tags={gameEngine.tags}
                     githubLink={gameEngine.githubLink}/>
                 </div>
-                <div className="column"></div>
-                <div className="column"></div>
+
                 
             </div>
       </section>

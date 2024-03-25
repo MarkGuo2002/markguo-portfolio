@@ -32,7 +32,7 @@ function AboutMe() {
               </div>
               <div className='mini-section'>
                 <div className='mini-section-title'>Tech Stack</div>
-                <div className="tags">
+                <div className="tags-container">
                   <Tag text="C" />
                   <Tag text="JavaScript" />
                   <Tag text="HTML/CSS" />

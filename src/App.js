@@ -34,19 +34,17 @@ function App() {
         </>
       )}
 
-    <div>
-      <div>
+    <div className='wrapper'>
         <AboutMe />
-      </div>
-      <div>
-        <Projects />
-      </div>  
-    </div> {/*  wrapper */}
+        <Projects />  
+    </div> 
+    
+    {/*  wrapper */}
     <footer className="footer" id="Contacts">
         <div className="content has-text-centered">
           <p>
           <strong>Contacts</strong><br></br><br></br>
-            Mark Guo © 2021
+            markguo2002@gmail.com
           </p>
         </div>
       </footer>

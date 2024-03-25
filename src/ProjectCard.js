@@ -1,35 +1,23 @@
 import Tag from "./Tag";
+import './ProjectCard.css';
 function ProjectCard(props) {
     for (let i = 0; i < props.tags.length; i++) {
       props.tags[i] = <Tag text={props.tags[i]} />;
     }
 
     return (
-      <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
-        <div class="card" >
-        <div class="card-image">
-          <figure class="image is-4by3">
-            <img src={props.image} alt="hello"></img>
-          </figure>
+      <div className="custom-card">
+        <div className="custom-card-image">
+          <img src={props.image} alt="MyTv Screenshot" />
         </div>
-        <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <p class="title is-4">{props.title}</p>
-            </div>
-          </div>
-      
-          <div class="content">
-            {props.content}
-
-            <br></br><br></br>
-            <div class="tags">
-              {props.tags}
-            </div>
-          </div>
+      <div className="custom-content">
+        <h2 className="custom-title">{props.title}</h2>
+        <p className="custom-body">{props.content}</p>
+        <div className="custom-tags">
+          {props.tags}
         </div>
       </div>
-    </a>
+    </div>
     );
   }
 
