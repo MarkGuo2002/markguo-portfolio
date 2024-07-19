@@ -20,7 +20,7 @@ body.dark {
 }
 
 h1 {
-    @apply text-4xl font-extrabold;
+    @apply text-4xl font-extrabold  ;
 }
 
 
