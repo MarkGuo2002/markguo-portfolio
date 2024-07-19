@@ -1,56 +1,26 @@
 import React, { useEffect, useState} from 'react';
-import './App.css';
-import "bulma/css/bulma.css"
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+import './index.css';
 import 'aos/dist/aos.css'; // Import the styles
 
 import AOS from 'aos';
-import Navbar from "./Navbar";
-import GoTopButton from './GoTopButton';
-import AboutMe from './AboutMe';
+
+import Navbar from './Navbar';
 import Hero from './Hero';
-import Projects from './Projects';
+import AboutMe from './AboutMe';
 
 function App() {
-  const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    AOS.init();
-
-    const handleResize = () => {
-      setViewportWidth(window.innerWidth);
-    }
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  const shouldRender = viewportWidth >= 800;
-  return (
-    <>
-      <Navbar render={shouldRender}/>
-     {shouldRender && (
-        <>
-          <GoTopButton />
-          <Hero />
-        </>
-      )}
-
-    <div className='wrapper'>
+  return(
+    <div>
+      <Navbar />
+      <div className='main-container px-16 py-20 lg:px-96'>
+        <Hero />
         <AboutMe />
-        <Projects />  
-    </div> 
-    
-    {/*  wrapper */}
-    <footer className="footer" id="Contacts">
-        <div className="content has-text-centered">
-          <p>
-          <strong>Contacts</strong><br></br><br></br>
-            markguo2002@gmail.com
-          </p>
-        </div>
-      </footer>
-    </>
-    
-  );
+      </div>
+      
+    </div>
+  )
+  
 }
 
 export default App;

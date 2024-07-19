@@ -1,65 +1,33 @@
-import profilePhoto from './assets/profile.png';
-import './AboutMe.css';
-import "./Tools.css";
-import Tag from './Tag';
-
-function AboutMe() {
-  return (
-    <div>
-    <section className="section" id="About Me" data-aos="fade-right" data-aos-once="true">
-        <div className='title'>About me!</div>
-        <div className="aboutme-container columns">
-            <div className="column is-one-quarter profile-container" data-aos="fade-right" data-aos-once="true" data-aos-delay="150">
-              <img className="profile-image" src={profilePhoto} alt='hello world' />
-              <div>
-                <p> 
-                  <em>Fourth-year student in Computer Science
-                  at UC3M Madrid<br></br>
-                  Currently working as Cloud & Cybersecurity Assistant at <strong>Satec_</strong></em>
-                </p>
-              </div>
-            </div>
-            <div className="column column-padding" data-aos="fade-right" data-aos-once="true" data-aos-delay="300">
-              <div className='mini-section'>
-                <div className='mini-section-title'>Education</div>
-                <p><strong>2011 - 2020: </strong>Nuestra Señora del Carmen Indautxu de Bilbao</p>
-                <p><strong>2020 - 2024: </strong> Universidad Carlos III de Madrid (UC3M) - Computer Science</p>
-              </div>
-              <div className='mini-section'>
-                <div className='mini-section-title'>Work Experience</div>
-                <p><strong>2023 oct - now:</strong> Sistemas Avanzados de Tecnología S.A. (Satec_)</p>  
-              </div>
-              <div className='mini-section'>
-                <div className='mini-section-title'>Main interests</div>
-                <Tag text="Software Developing" />
-                <Tag text="Web Developing" />
-                <Tag text="Cloud Technology" />
-                <Tag text="Software Architecture" />
-                <Tag text="Agile Methodologies" />
-                
-              </div>
-              <div className='mini-section'>
-                <div className='mini-section-title'>Tech Stack</div>
-                <div className="tags-container">
-                  <Tag text="C" />
-                  <Tag text="JavaScript" />
-                  <Tag text="HTML/CSS" />
-                  <Tag text="React" />
-                  <Tag text="Node.js" />
-                  <Tag text="MongoDB" />
-                  <Tag text="SQL" />
-                  <Tag text="Git" />
-                  <Tag text="Terraform" />
-                  <Tag text="Ansible" />
-                  <Tag text="Linux" />
-                </div>
-              </div>
+import guiana from './assets/french-guiana.png';
+const AboutMe = () => {
+    return (
+        <div className="flex flex-col items-center py-12">
+            <h1>About Me</h1>
+            <p className=" text-gray-500">Let me tell the story once again...</p>
+            <div className="timeline-container w-full my-4">
+                <Timeline />
             </div>
         </div>
-    </section>
-    </div>
-  );
-}
+    );
+    }
+
+
+
+const Timeline = ( {year, event, last=false} ) => {
+    return (
+        <div>
+            <div className="flex items-center w-full">
+                <div className="date-container p-2 bg-darkgray rounded-xl"> 2002 </div>
+                <div className="box-connectors h-1 w-20 bg-boxBgGray"></div>
+                <div className="event-container p-2 bg-boxBgGray rounded-xl w-5/6"> I was born in French Guiana </div>
+                <div className="image-container w-1/12">
+                    <img src={guiana} className="rounded-xl"/>
+                </div>
+            </div>
+            <div className="vertical-connector h-20 w-0 border-darkgray border-2 divide-dotted"></div>
+        </div>
+    );
+    }
 
 
 export default AboutMe;

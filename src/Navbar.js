@@ -1,30 +1,35 @@
-import "./Navbar.css";
-import logo from "./assets/logo-markguo-removebg.png";
-import NavbarOption from "./NavbarOption";
-
-function Navbar(props) {
-
-  
+import { FaMoon } from 'react-icons/fa';
+import logo from './assets/signature-nobg.png';
+const Navbar = () => {
     return (
-      <div>
-        <div className="navbar" role="navigation">
-          <div className="navbar-brand">
-            <a className="navbar-item" href="https://www.linkedin.com/in/mark-guo-620512196/">
-              <img src={logo} width="112" height="28" alt="LinkedIn Logo" />
-            </a>
-          </div>
-          
-        {props.render && (
-        <>
-          <NavbarOption text="About Me" />
-          <NavbarOption text="Projects" />
-          <NavbarOption text="Contacts" />
-        </>
-        )}
+        <div className=' fixed top-0 w-full bg-bgGray    '>
+            <nav className="flex justify-center gap-4 lg:justify-between border-b-2 items-center border-strokeGray px-8 py-2">
+                <div className='left-panel flex'>
+                    <img src={logo} alt="logo" className="h-8 w-12 mr-10  hidden lg:block" />
+                    <ul className="flex space-x-8 ">
+                        <NavbarOption section="About me" refer="about"/>
+                        <NavbarOption section="Skills" refer="skills"/>
+                        <NavbarOption section="Projects" refer="projects"/>
+                        <NavbarOption section="Contacts" refer="contacts "/>
+                    </ul>
+                </div>
+                
+                <FaMoon size={20} className='hover:text-gray-600 transition-all'/>
+            </nav>
+
         </div>
-      </div>
+     
     );
-  }
-  
+}
+
+
+const NavbarOption = ( {section, refer} ) => {
+    return (
+        <li className=" bg-bgGray hover:bg-boxBgGray px-2 py-1 rounded-md transition-all">
+            <a href={`${refer}`}>{section}</a>
+        </li>
+    );
+};
+
 
 export default Navbar;
