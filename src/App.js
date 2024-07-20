@@ -8,6 +8,7 @@ import AOS from 'aos';
 import Navbar from './Navbar';
 import Hero from './Hero';
 import AboutMe from './AboutMe';
+import Projects from './Projects';
 
 function App() {
   return(
@@ -16,6 +17,7 @@ function App() {
       <div className='main-container px-16 py-20 lg:px-96'>
         <Hero />
         <AboutMe />
+        <Projects />
       </div>
       
     </div>

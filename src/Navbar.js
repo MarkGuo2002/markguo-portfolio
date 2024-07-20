@@ -2,7 +2,7 @@ import { FaMoon } from 'react-icons/fa';
 import logo from './assets/signature-nobg.png';
 const Navbar = () => {
     return (
-        <div className=' fixed top-0 w-full bg-bgGray    '>
+        <div className=' fixed top-0 w-full bg-bgGray z-30'>
             <nav className="flex justify-center gap-4 lg:justify-between border-b-2 items-center border-strokeGray px-8 py-2">
                 <div className='left-panel flex'>
                     <img src={logo} alt="logo" className="h-8 w-12 mr-10  hidden lg:block" />
