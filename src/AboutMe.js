@@ -6,6 +6,8 @@ import uc3m from './assets/uc3m.png';
 import satec from './assets/satec.png';
 import graduate from './assets/graduate.png';
 
+import AdditionalInfo from './AdditionalInfo';
+
 
 let timeline = [
     {
@@ -62,13 +64,20 @@ const AboutMe = () => {
             <h1>About Me</h1>
             <p className=" text-gray-500">Let me tell the story once again...</p>
             <p className=" text-gray-300 italic">Try hovering through the timeline ;)</p>
-            <div className="timeline-container w-full my-4">
+            <div className="timeline-container w-full mt-4 mb-12">
                 {timelineContainer}
                 
-            </div>
+            </div >
+            <AdditionalInfo />
+
         </div>
     );
     }
+
+
+
+
+
 
 
 
