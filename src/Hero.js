@@ -8,7 +8,7 @@ const Hero = () => {
 
             <div className='gradient-decoration w-[70vh] h-[40vh] rounded-[100%] z-0 bg-red-100 absolute top-0 right-0 blur-[150px] opacity-65'></div>
             <div className='font-extrabold text-4xl flex items-center gap-5 z-20'>
-                <img src={photo} alt='Mark Photo' className='w-24 h-24 rounded-full shadow-lg z-20'/>
+                <img src={photo} alt="" className='w-24 h-24 rounded-full shadow-lg z-20'/>
                 <h1 className='z-20'>Hi!🙌<br></br>I'm Mark Guo!</h1>
             </div>
             <p className='font-semibold text-xl py-8 z-20'>
