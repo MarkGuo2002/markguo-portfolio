@@ -4,6 +4,7 @@
 
 html {
     @apply bg-bgGray;
+    scroll-behavior: smooth;
   }
 
 /* Use CSS variables in your styles */

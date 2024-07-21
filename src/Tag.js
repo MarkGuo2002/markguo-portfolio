@@ -1,4 +1,4 @@
-const Tag = ({ text, color = "white" }) => {
+const Tag = ({ text, color = "white", icon}) => {
     const colorClasses = {
       myyellow: 'bg-myyellow',
       myblue: 'bg-myblue',
@@ -8,7 +8,8 @@ const Tag = ({ text, color = "white" }) => {
     };
   
     return (
-      <div className={`${colorClasses[color]} text-black shadow-lg px-4 py-1 rounded-xl flex justify-center items-center w-fit`}>
+      <div className={`${colorClasses[color]} text-black shadow-lg px-4 py-1 rounded-xl flex justify-center items-center w-fit gap-1`}>
+        {icon}
         <p>{text}</p>
       </div>
     );
