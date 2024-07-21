@@ -1,9 +1,6 @@
-import React, { useEffect, useState} from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
 import './index.css';
 import 'aos/dist/aos.css'; // Import the styles
 
-import AOS from 'aos';
 
 import Navbar from './Navbar';
 import Hero from './Hero';

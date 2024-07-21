@@ -13,7 +13,7 @@ const CardProject = ( {image, title, description, date, taglist} ) =>{
         <div className="px-4 py-2 bg-primary right-0 bottom-0 absolute rounded-tl-xl rounded-br-xl text-white font-semibold drop-shadow-md
                         opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 ease-in-out"> Learn more → </div>
             
-            <img src={image} className="relative right-24 top-12 w-6/12 h-fit object-cover group-gover rounded-xl all-directions-shadow
+            <img src={image} alt="project-card" className="relative right-24 top-12 w-6/12 h-fit object-cover group-gover rounded-xl all-directions-shadow
                                             group-hover:translate-x-12 group-hover:-translate-y-4 group-hover:rotate-3 transition-all duration-500 ease-in-out" />
             
             <div className="w-6/12 pr-12 description-container flex flex-col gap-2">

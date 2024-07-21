@@ -1,4 +1,4 @@
-import { FaMoon } from 'react-icons/fa';
+// import { FaMoon } from 'react-icons/fa';
 import logo from './assets/signature-nobg.png';
 const Navbar = () => {
     return (

@@ -11,7 +11,7 @@ const Timeline = ( {year, event, last=false, image} ) => {
                 </div>
                 <div className="z-20 absolute right-0 image-container w-20 ml-4 translate-x-0 opacity-40
                  group-hover:opacity-100 group-hover:translate-x-2/4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500 ease-in-out" >
-                    <img src={image} className="rounded-xl"/>
+                    <img src={image} alt="event-img" className="rounded-xl"/>
                 </div>
             </div>
             {!last && (
