@@ -37,7 +37,7 @@ const projects = [
     {
         "image": ablog,
         "title":"Ablog",
-        "description":"A blog application developed in Python using Flask, SQLAlchemy, and SQLite. The application allows users to create, read, update, and delete posts.",
+        "description":"Ad hoc blogging platform that allows users to write, manage and publish their blogs easily. The frontend is developed with React and TailwindCSS, while the backend uses JavaScript, Node.js, Express, and PostgreSQL. They communicate through a REST API, and the authentication process is handled using JWT tokens.",
         "date":"July 2024",
         "tags": ["React", "TailwindCSS", "AWS", "PotgreSQL", "JWT", "REST", "Terraform", "Docker"]
     }

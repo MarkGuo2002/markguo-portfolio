@@ -7,7 +7,7 @@ import satec from './assets/satec.png';
 import graduate from './assets/graduate.png';
 
 import Timeline from './Timeline';
-import AdditionalInfo from './AdditionalInfo';
+
 
 
 let timeline = [
