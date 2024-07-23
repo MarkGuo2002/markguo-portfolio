@@ -4,7 +4,7 @@ import { FaFileDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
     return (
-        <div className="hero-container px-36">
+        <div className="hero-container lg:px-36">
 
             <div className='gradient-decoration w-[70vh] h-[40vh] rounded-[100%] z-0 bg-red-100 absolute top-0 right-0 blur-[150px] opacity-65'></div>
             <div className='font-extrabold text-4xl flex items-center gap-5 z-20'>

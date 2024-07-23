@@ -56,7 +56,7 @@ const AboutMe = () => {
                 year={item.year}
                 event={item.event}
                 image={item.image}
-                last={index === timeline.length - 1} 
+                headtail={index === 0 || index === timeline.length - 1}
             />
         )
     })   
@@ -65,8 +65,10 @@ const AboutMe = () => {
             <h1>About Me</h1>
             <p className=" text-gray-500">Let me tell the story once again...</p>
             <p className=" text-gray-300 italic">Try hovering through the timeline ;)</p>
-            <div className="timeline-container w-full mt-4 mb-12">
+            <div className="timeline-container w-full mt-4 mb-12 relative">
+                <div className='p-2 bg-boxBgGray rounded-full absolute transform -translate-y-[70%] -translate-x-[42%]'></div>
                 {timelineContainer}
+                <div className='p-2 bg-boxBgGray rounded-full transform absolute -translate-x-[42%]'></div>
                 
             </div >
             <div className='w-full mt-12'>
