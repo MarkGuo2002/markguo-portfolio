@@ -1,6 +1,6 @@
 const Timeline = ( {year, event, last=false, image} ) => {
     return (
-        <div className='flex group '>
+        <div className='flex group'>
             <div className="flex w-fit relative items-center">
                 <div className="vertical-line h-full w-1 bg-boxBgGray"></div>
                 <div className="z-10 p-2 border-[1px] border-boxBgGray bg-white rounded-full absolute top-1/2 transform -translate-y-[40%] -translate-x-[38%]
@@ -10,7 +10,7 @@ const Timeline = ( {year, event, last=false, image} ) => {
                 </div> */}
             </div>
             <div className="flex w-full relative my-6 ml-12 items-center">
-                <div className=" z-10 event-container py-2 px-4 bg-white border-2 border-boxBgGray rounded-xl w-full group-hover:translate-x-4 group-hover:brightness-90 transition-all duration-500">
+                <div className=" z-10 event-container py-2 pl-4 pr-16 bg-white border-2 border-boxBgGray rounded-xl w-full group-hover:translate-x-4 group-hover:brightness-90 transition-all duration-500">
                     
                     {event}
                 </div>
