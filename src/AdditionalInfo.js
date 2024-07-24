@@ -39,7 +39,8 @@ const AdditionalInfo = () => {
 
 const MyInterests = () => {
     return (
-        <div className="w-[20rem]  rounded-xl border-darkgray border-[1px] p-4 bg-hoverGray flex flex-col items-center">
+        <div data-aos="fade-down" className="w-[20rem]  rounded-xl border-darkgray border-[1px] p-4 bg-hoverGray flex flex-col items-center
+                                            hover:brightness-95">
            <h3 className="text-primary">My Interests</h3>
             <div className="flex flex-wrap items-center justify-center gap-5 mt-6">
             <Tag text="Cloud Solutions" color="myyellow" icon={ <FaCloud size={"1rem"}/>}/>
@@ -54,7 +55,7 @@ const MyInterests = () => {
 
 const MyHobbies = () => {
     return (
-        <div className="w-[20rem] rounded-xl border-darkgray border-[1px] p-4 bg-hoverGray flex-col flex items-center">
+        <div data-aos="fade-down" className=" hover:brightness-95 w-[20rem] rounded-xl border-darkgray border-[1px] p-4 bg-hoverGray flex-col flex items-center">
            <h3 className="text-primary">My Hobbies</h3>
             <div className="flex flex-wrap items-center justify-center gap-5 mt-6">
             <Tag text="Music making" color="myblue" icon={ <FaMusic size={"1rem"}/>} />
@@ -76,7 +77,7 @@ const MySkills = () => {
         )
     })
     return (
-        <div className="w-[20rem] h-fit rounded-xl border-darkgray border-[1px] py-4 px-8 bg-hoverGray flex-col flex items-center">
+        <div data-aos="fade-down" className="hover:brightness-95 w-[20rem] h-fit rounded-xl border-darkgray border-[1px] py-4 px-8 bg-hoverGray flex-col flex items-center">
         <h3 className="text-primary">My Skills</h3>
             <div className=" skills-container w-full flex flex-col gap-1 mt-6">
                 {skillsContainer}

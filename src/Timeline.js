@@ -1,6 +1,6 @@
 const Timeline = ( {year, event, last=false, image} ) => {
     return (
-        <div className='flex group'>
+        <div className='flex group' data-aos="fade-down" data-aos-offset="10">
             <div className="flex w-fit relative items-center">
                 <div className="vertical-line h-full w-1 bg-boxBgGray"></div>
                 <div className="z-10 p-2 border-[1px] border-boxBgGray bg-white rounded-full absolute top-1/2 transform -translate-y-[40%] -translate-x-[38%]

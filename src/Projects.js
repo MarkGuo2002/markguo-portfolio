@@ -64,13 +64,13 @@ const Projects = () => {
     })
 
     return (
-        <div id="projects" className="flex flex-col items-center py-12">
+        <div data-aos="fade-down" id="projects" className="flex flex-col items-center py-12">
             <h1>Projects</h1>
             <p className=" text-gray-500 italic">Not enough? I’m open to challenges, just contact me via email.</p>
             <div className=" projects-container w-full my-4 flex flex-col gap-8 justify-center items-center">
                 {projectsContainer}
             </div>
-            <p className="text-gray-500 italic mt-8">Still updating...</p>
+            <p data-aos="fade-down" className="text-gray-500 italic mt-8">Still updating...</p>
         </div>
     );
 }

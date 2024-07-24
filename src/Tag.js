@@ -8,7 +8,7 @@ const Tag = ({ text, color = "white", icon}) => {
     };
   
     return (
-      <div className={`${colorClasses[color]} text-black shadow-lg px-4 py-1 rounded-xl flex justify-center items-center w-fit gap-1`}>
+      <div className={`${colorClasses[color]} text-black shadow-lg px-2 py-1 rounded-xl flex justify-center items-center w-fit gap-1`}>
         {icon}
         <p>{text}</p>
       </div>

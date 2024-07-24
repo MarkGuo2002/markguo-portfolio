@@ -9,7 +9,7 @@ const Navbar = () => {
                     <img src={logo} alt="logo" className="h-8 w-12 mr-10  hidden lg:block" />
                 </a>
                     <ul className="flex space-x-8 ">
-                        <NavbarOption section="About me" refer="about"/>
+                        <NavbarOption section="About" refer="about"/>
                         <NavbarOption section="Skills" refer="skills"/>
                         <NavbarOption section="Projects" refer="projects"/>
                         <NavbarOption section="Contacts" refer="contacts "/>

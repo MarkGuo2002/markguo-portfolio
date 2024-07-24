@@ -2,7 +2,7 @@ import { FaMailBulk ,FaLinkedin } from 'react-icons/fa';
 
 const ContactMe = () => {
     return (
-        <div id="contacts" className="flex flex-col items-center py-12 px-0 lg:px-24">
+        <div data-aos="fade-down" id="contacts" className="flex flex-col items-center py-12 px-0 lg:px-24">
             <div className='separator w-full h-[1px] bg-strokeGray mt-24 mb-8'></div>
             <h1>Contact Me</h1>
             <div className='flex flex-col items-center mt-10'>

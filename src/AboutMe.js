@@ -61,10 +61,10 @@ const AboutMe = () => {
         )
     })   
     return (
-        <div id="about" className="flex flex-col items-center py-12 px-0 lg:px-48">
+        <div data-aos="fade-down" id="about" className="flex flex-col items-center py-12 px-0 lg:px-48">
             <h1>About Me</h1>
             <p className=" text-gray-500">Let me tell the story once again...</p>
-            <p className=" text-gray-300 italic">Try hovering through the timeline ;)</p>
+            <p className=" hidden lg:block text-gray-300 italic">Try hovering through the timeline ;)</p>
             <div className="timeline-container max-w-3xl mt-4 mb-12 relative">
                 <div className='p-2 bg-boxBgGray rounded-full absolute transform -translate-y-[70%] -translate-x-[42%]'></div>
                 {timelineContainer}
