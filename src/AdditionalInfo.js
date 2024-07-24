@@ -3,6 +3,9 @@ import ProgressBar from "./ProgressBar";
 import { FaCloud, FaConnectdevelop, FaDev, FaDumbbell, FaMountain, FaPlane, FaRunning, FaShieldAlt, FaUserFriends, FaMusic, FaFile } from "react-icons/fa";
 
 const skillsData = [
+    { text: "Spanish", mastery: 90 },
+    { text: "English", mastery: 90 },
+    { text: "Chinese", mastery: 85 },
     { text: "React", mastery: 75 },
     { text: "Node.js", mastery: 65 },
     { text: "Git", mastery: 55 },
@@ -20,7 +23,7 @@ const skillsData = [
     { text: "C++", mastery: 25 },
     { text: "Linux", mastery: 80 },
     { text: "Servers", mastery: 50 },
-    { text: "Bash", mastery: 40 },
+    { text: "Bash", mastery: 40 }
 ];
 
 

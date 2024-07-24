@@ -1,5 +1,5 @@
 import photo from './assets/work photo.jpeg'
-import cvFile from './assets/cv.pdf'
+import cvFile from './assets/Mark_Guo_CV.pdf'
 import { FaFileDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
