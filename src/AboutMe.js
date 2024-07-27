@@ -43,7 +43,7 @@ let timeline = [
     },
     {
         'year':'2024',
-        'event': 'I finished my interships in May and succesfully graduated from UC3M.',
+        'event': 'I finished my internships in May and succesfully graduated from UC3M.',
         'image': graduate
     }
 ]
