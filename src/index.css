@@ -28,10 +28,15 @@ h3 {
     @apply text-2xl font-bold  ;
 }
 
-.all-directions-shadow {
-    box-shadow: 0 10px 12px rgba(46, 46, 46, 0.1), 0 -10px 12px rgba(85, 85, 85, 0.1), 10px 0 12px rgba(71, 71, 71, 0.1), -10px 0 12px rgba(0, 0, 0, 0.1);
-  }
-  
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
 @layer components {
 

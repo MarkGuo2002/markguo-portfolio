@@ -9,8 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        itim: ['Itim', 'cursive'],
       },
       colors: {
+        an_pink: '#FFE4ED',
   
         primary: '#F14881',
         strokeGray: '#F1EDE9',
@@ -24,6 +26,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }
 
