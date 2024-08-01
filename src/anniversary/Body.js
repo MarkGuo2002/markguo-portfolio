@@ -1,3 +1,5 @@
+import React, { useEffect, useRef } from 'react';
+
 import ImageContainer from './ImageContainer';
 import ImageSlider from './ImageSlider';
 
@@ -11,10 +13,24 @@ import first2 from './images/first2.jpg';
 import videocall2 from './images/videocall2.PNG';
 import sillyselfie4 from './images/sillyselfie4.jpg';
 
+import only from './images/ONLY.mp3';
 
 export default function Body() {
+    const audioRef = useRef(null);
+    useEffect(() => {
+        const audioElement = audioRef.current;
+        // Play the audio when the component mounts
+        audioElement.play();
+
+        return () => {
+            // Pause the audio when the component unmounts
+            audioElement.pause();
+        };
+    }, []);
+
     return (
         <div className='main-container flex flex-col gap-20 w-full items-center'>
+            <audio ref={audioRef} src={only} loop />
             <div className='flex items-center justify-center flex-wrap gap-12'>
                 <ImageContainer image={first} decoration={cutecat} />
                 <ImageContainer image={first2} decoration={flower} isLeft={false} caption={"Mi niña viendo pececitos"}/>
@@ -31,7 +47,7 @@ La verdad es que antes de que quedásemos ya pensaba en podríamos tener algo je
                 <div data-aos="fade-down" data-aos-delay="300" className='flex flex-col items-center w-auto gap-8'>
                     <p className='text-base lg:text-xl'>
                     Después de un año lleno de videollamadas (capturas), citas románticas, noche de chateo, manoseos…. Sigo pensando de que eres la chica más romántica, 
-                    empática, linda, mona y lista; además, hasta ahora nunca he sentido de que no eres suficiente para mí o alguna tonteria estas tuyas 😊. Siempre he 
+                    empática, linda, mona, lista y wife material; además, hasta ahora <span className='text-primary font-bold'>nunca he sentido de que no eres suficiente para mí</span> o alguna tonteria estas tuyas 😊. Siempre he 
                     sentido de que yo no soy lo suficientemente bueno para ti, soy cada vez más informático, me preocupo cada vez menos en mi físico, te maltrato, no estoy
                     a tu nivel como persona… En fín, son cosas que suelo pensar de vez en cuando. No sé si tu me ves igual de bien como hace un año cuando me mandaste aquel 
                     mensaje, sé que probablemente que no, ya que has visto demasiadas partes negativas de mí en este año tan estresante que tuve… Pero bueno, iré mejorando 
@@ -72,7 +88,7 @@ La verdad es que antes de que quedásemos ya pensaba en podríamos tener algo je
             </div>
 
             <p data-aos="fade-down" data-aos-delay="300" className='intro text-base lg:text-xl'>
-            Bueno, como ves, ya que tenemos que repetir tantos momentos juntos y probar nuevas experiencas, ¿Tendrás que estar a mi lado para siempre verdad? si no no nos da la vida jejeje...<br></br>
+            Bueno, ya que tenemos que repetir tantos momentos juntos y probar nuevas experiencas, ¿Tendrás que estar a mi lado para siempre verdad? si no no nos da la vida jejeje...<br></br>
             Como ves, esta vez no te he escrito una carta, no sé si te gustará… Sé que no soy muy bueno escribiendo cartas románticas en español (ahora creo que en chino tampoco JAJAJA) 
             y tengo una letra de… MIERDA. Por eso pensé en hacerte esta página web para al menos fingir que tengo buena letra jejeje, espero que te guste mi baby. Y voy a rezar a que no me hayas 
             preparado ningún regalo, porque TÚ ya eres el mejor regalo que he recibido en mi vida... <br></br><br></br>¿Qué? No me crees? Entonces explícame la siguiente foto:
@@ -80,7 +96,7 @@ La verdad es que antes de que quedásemos ya pensaba en podríamos tener algo je
             
             <ImageContainer image={bestgift} decoration={cutelazo} caption={"El mejor regalo no exi..."}/>
             <div className='relative flex flex-col'>
-                <h1 data-aos="fade-down" data-aos-delay="300" className='text-primary text-center py-12 lg:py-24 px-12 lg:px-96 text-2xl lg:text-4xl'> Ling, te amo con todo mi corazón... Sigamos juntos hasta que nuestras almas desaparezcan de este mundo 💕 </h1>
+                <h1 data-aos="fade-down" data-aos-delay="300" className='text-primary text-center py-12 lg:py-24 px-12 lg:px-96 text-2xl lg:text-4xl'> Ling, gracias por este increíble año. Te amo con todo mi corazón... Sigamos juntos hasta que nuestras almas desaparezcan de este mundo 💕 </h1>
                 <p data-aos="fade-down" data-aos-delay="500" className='text-primary text-right text-xs'>~Tu cuchurrumin de fresa<br></br>3 de Agosto de 2024</p>
 
             </div>
