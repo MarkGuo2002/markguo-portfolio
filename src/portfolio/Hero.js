@@ -12,7 +12,7 @@ const Hero = () => {
                 <h1 data-aos="fade-right" data-aos-delay="100" className='z-20'>Hi!🙌<br></br>I'm Mark Guo!</h1>
             </div>
             <p className='font-semibold text-xl py-8 z-20' data-aos="fade-right" data-aos-delay="200">
-                I’m a <span className='text-primary'>software engineer</span> with a strong interest in distributed systems and cloud solutions. Skilled in Python, Web development, AWS, C and Linux.
+                I’m a <span className='text-primary'>software engineer</span> at Thermo Fisher Scientific with a strong interest in distributed systems and cloud solutions. Skilled in Python, Web development, AWS, C and Linux.
             </p>
             <div className='link-container flex gap-6 z-20'>
                 <a href={cvFile} download="Mark_Guo_CV.pdf" data-aos="fade-right" data-aos-delay="400">

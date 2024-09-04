@@ -5,6 +5,7 @@ import scratch from '../assets/scratch.png';
 import uc3m from '../assets/uc3m.png';
 import satec from '../assets/satec.png';
 import graduate from '../assets/graduate.png';
+import logothermofisher from '../assets/logo-thermo-fisher.png'
 
 import Timeline from './Timeline';
 
@@ -43,8 +44,13 @@ let timeline = [
     },
     {
         'year':'2024',
-        'event': 'I finished my internships in May and succesfully graduated from UC3M.',
+        'event': 'I finished my internships in May and succesfully graduated from UC3M in July.',
         'image': graduate
+    },
+    {
+        'year':'2024',
+        'event': 'On September 2, I started working remotely as a Software Engineer at Thermo Fisher Scientific, collaborating with a diverse team of colleagues from countries such as India, Vietnam, the US, and the UK.',
+        'image': logothermofisher
     }
 ]
 

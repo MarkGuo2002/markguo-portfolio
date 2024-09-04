@@ -14,7 +14,7 @@ const projects = [
         "title":"Chikinmos Website",
         "description":"Freelance Project: Branding website for the well known korean fried chicken restaurant Chikinmos in Madrid. The frontend is developed with React and TailwindCSS.",
         "date":"On Going",
-        "tags": ["React", "TailwindCSS", "UI design", "Requirements Analysis", "Customer Service"],
+        "tags": ["Next.js", "Typescript", "React", "TailwindCSS", "UI design", "Requirements Analysis"],
         "link": "https://www.instagram.com/chikinmos/?hl=es"
     },
     {
